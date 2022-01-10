@@ -1,0 +1,51 @@
+---
+id: openlabs_test2
+name: Openlabs test2
+description: Easy to use immersive learning platform.
+keywords: openlabs, openlabs demo, demo, immersive, learning
+branding:
+    logo: _images/logo.png
+    banner: _images/banner.png
+    textColor: '#012748'
+    header:
+        link: https://developer.ibm.com/openlabs/demo
+        text: IBM Openlabs
+        logo: _images/logo.png
+license: MIT
+duration: 1 hour
+type: lite
+categories:
+    - Learning
+intro: README.md
+documentation: https://github.com/purva2412/catalog-test1/blob/main/README.md
+commands:
+    - name: Clone Template
+      cmd: git clone https://github.com/purva2412/catalog-test1.git
+      cwd: /home/student/projects
+      stepMessage: Cloning repository ....
+environment:
+    terminal:
+        name: Terminal
+        enabled: true
+    ide:
+        name: IDE
+        enabled: false
+        url: '{{ IDE.url }}'
+    application:
+        name: App Preview
+        url: '{{ DNS.host }}'
+        enabled: false
+config:
+    auth: app_id
+    launchBtn:
+        buttonLabel: Launch Lab
+    execCmd : 
+        autoExecute: false
+        buttonLabel: Install
+backend:
+    service: MOCK-SERVICE
+tileInfo:
+    - title: RHEL Basics
+      description: Learn basics commands and fundamentals of the Linux operating system.
+      duration: 30 min
+      content: rhel-basics.md
